@@ -28,38 +28,36 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
                     <div class="homebox">
-                        <a href="/portfolio/#professional">
-                            <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
-                            <h3>Professional Work</h3>
-                            <p>Looking for websites, applications and pages I've created at work? You'll find them here.</p>
-                        </a>
+                        <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
+                        <h3>Professional Work</h3>
+                        <p>Looking for stuff I've created at work? You'll find all that here.</p>
+                        <a href="/portfolio/#professional" class="btn">Let's See it <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="homebox">
-                        <a href="/portfolio/#personal">
-                            <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
-                            <h3>Personal Projects</h3>
-                            <p>Stuff I tinker with in my spare time. Feel free to check it out.</p>
-                        </a>
+                        <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+                        <h3>Personal Projects</h3>
+                        <p>Stuff I tinker with in my spare time. Feel free to check it out.</p>
+                        <a href="/portfolio/#personal" class="btn">Let's See it <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="homebox">
-                        <a href="/portfolio/#components">
-                            <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
-                            <h3>Web Components</h3>
-                            <p>Flashy slideshows, fancy accordions &dash; you'll find all of those nifty little widgets here.</p>
-                        </a>
+                        <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
+                        <h3>Web Components</h3>
+                        <p>Flashy slideshows, fancy accordions &dash; you'll find all of those nifty little widgets here.</p>
+                        <a href="/portfolio/#components" class="btn">Let's See it <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="hire-me">
+    <div class="hire-me content">
         <div class="container">
-            <p>Psst. Looking for an associate-level developer? I'm looking for work.</p>
-            <a href="/contact" class="classy-btn">Hire Me</a>
+            <h1>Psst.</h1>
+            <p> Looking for an associate-level developer? I'm looking for work.</p>
+            <a href="/contact" class="btn">Hire Me</a>
         </div>
     </div>
 @endsection

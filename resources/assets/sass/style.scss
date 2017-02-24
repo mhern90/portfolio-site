@@ -6,6 +6,7 @@ Dev: Melinda Hernandez
 
 @import 'variables';
 @import 'animations';
+@import 'mixins';
 
 /* STYLE INDEX:==============
 * 01: General Styles
@@ -26,6 +27,7 @@ html {
 }
 
 body {
+    z-index: 0; 
     font-family: 'Open-Sans', sans-serif;
     color: $light-gray;
     h1,h2,h3 {
@@ -52,6 +54,18 @@ body {
     img {
         max-width: 100%;
     }
+    p {
+        font-weight: 300;
+    }
+    a.btn {
+        font-weight: 300;
+        font-size: 1.2em;
+        padding: .45em 1.5em;
+        border: 2px solid #fff;
+        background-color: transparent;
+        margin: 1em 0;
+        text-decoration: none;
+    }
 }
 
 /* ======================
@@ -64,6 +78,7 @@ header {
     background-size: cover;
     width: 100%;
     .name-wrap {
+        opacity: 0;
         animation: fadeUp 1s 1s ease-in forwards;
         text-align: center;
         color: #fff;
@@ -144,16 +159,22 @@ nav {
     padding: 3em 0;
 }
 
+/* homeboxes */
+
 .homeboxes {
     background-color: $purple;
     padding: 2em 0;
     .homebox {
+        position: relative;
+        h3 {
+            margin-bottom: 20px;
+        }
         text-align: center;
         & > * {
             color: #fff;
         }
         &:hover {
-            i.fa {
+            i.fa:not(.fa-arrow-right) {
                 animation-name: twitch;
                 animation-duration: .5s;
                 animation-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
@@ -161,11 +182,27 @@ nav {
             }
         }
     }
+    a.btn {
+        @include btn-fill(#fff)
+    }
     i.fa {
         transform-origin: top !important;
     }
 }
 
+/* hire me bar */
+
+.hire-me {
+    padding: 3em 0;
+    text-align: center;
+    background-color: $minty-aqua;
+    p {
+        font-size: 1.8rem;
+    }
+    a.btn {
+        @include btn-fill($dark-green)
+    }
+}
 /* ======================
 Content Styles
 ====================== */
