@@ -12,9 +12,9 @@ Dev: Melinda Hernandez
 * 01: General Styles
 * 02: Header
 * 03: Navigation
-* 04: Homepage Styles
-*
-* 
+* 04: Main Styles
+* 05: Content Styles
+* 06: Footer Styles
 ===========================*/
 
 
@@ -66,6 +66,28 @@ body {
         margin: 1em 0;
         text-decoration: none;
     }
+}
+
+.va-parent {
+    font-size: 0;
+}
+.va-parent > * {
+    font-size: 1em;
+}
+.va-top {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.va-middle {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.va-bottom {
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 /* ======================
@@ -183,7 +205,7 @@ nav {
         }
     }
     a.btn {
-        @include btn-fill(#fff)
+        @include btn-fill(#fff, $purple)
     }
     i.fa {
         transform-origin: top !important;
@@ -193,14 +215,14 @@ nav {
 /* hire me bar */
 
 .hire-me {
-    padding: 3em 0;
+    padding: 3em 0 100px;
     text-align: center;
     background-color: $minty-aqua;
     p {
         font-size: 1.8rem;
     }
     a.btn {
-        @include btn-fill($dark-green)
+        @include btn-big($minty-aqua, $dark-green)
     }
 }
 /* ======================
@@ -218,8 +240,51 @@ Content Styles
         line-height: 1.5;
     }
     a {
-        color: $purple;
         text-decoration: underline;
         font-weight: 600;
+    }
+}
+
+/* ======================
+01: Footer Styles
+====================== */
+
+.footer {
+    position: relative;
+    background-color: #2B675E;
+    padding: 3em 0 .5em;
+    &:before {
+        pointer-events: none;
+        content: '';
+        background-image: url(../images/footer.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        transform: translateY(-100%);
+    }
+    & > * {
+        color: #fff;
+    }
+    h3 {
+        padding-bottom: 1em;
+    }
+    .fa {
+        padding-right: .5em;
+    }
+    a {
+        color: #fff;
+    }
+    li, p {
+        padding: .3em 0;
+    }
+    .copywrite {
+        text-align: center;
+        & p {
+            font-size: .7em;
+        }
     }
 }
