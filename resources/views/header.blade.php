@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Melinda Hernandez | @php echo $pageTitle @endphp</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Oxygen:300,400,700" rel="stylesheet">

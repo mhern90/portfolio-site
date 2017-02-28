@@ -1,7 +1,10 @@
 @extends('header')
 @section('content')
+@php
+$pageTitle = "Home";
+@endphp
 <header>
-    <div class="name-wrap">
+    <div class="text-wrap">
         <h1>Melinda Hernandez</h1>
         <h3>Front-end Web Developer</h3>
     </div>

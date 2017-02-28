@@ -1,4 +1,7 @@
 @extends('header')
+@php
+$pageTitle = "Contact";
+@endphp
     <main>
         <div class="container">
             <h1>This is an H1</h1>

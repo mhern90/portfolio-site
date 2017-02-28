@@ -13,8 +13,9 @@ Dev: Melinda Hernandez
 * 02: Header
 * 03: Navigation
 * 04: Main Styles
-* 05: Content Styles
-* 06: Footer Styles
+* 05: Interior Styles
+* 06: Content Styles
+* 07: Footer Styles
 ===========================*/
 
 
@@ -99,7 +100,8 @@ header {
     background-image: url("../images/header.jpg");
     background-size: cover;
     width: 100%;
-    .name-wrap {
+    text-align: center;
+    .text-wrap {
         opacity: 0;
         animation: fadeUp 1s 1s ease-in forwards;
         text-align: center;
@@ -111,6 +113,21 @@ header {
         }
         h3 {
             font-weight: 300;
+        }
+    }
+    &.interior {
+        position: relative;
+        height: 60vh;
+        background-image: none;
+        background-color: $minty-aqua;
+        .text-wrap {
+            padding: 0;
+            position: absolute;
+            top: 60%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: $light-gray;
         }
     }
 }
@@ -126,8 +143,10 @@ nav {
     position: absolute;
     top: 80px;
     width: 100%;
+    transition: background 0.25s;
     background: $purple-transparent;
     &.sticky {
+        background: $purple;
         position: fixed;
         top: 0;
     }
@@ -163,7 +182,31 @@ nav {
         color: #fff;
         padding-bottom: 5px;
     }
-    a.active {}
+    a:hover {
+        color: #fff;
+    }
+    li {
+        overflow: hidden;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0 ;
+            margin: auto;
+            height: 3px;
+            width: 80%;
+            background: rgba(355,355,355,0.2);
+            transform: translateY(10px);
+            transition: transform 0.25s;
+            transition-timing-function: cubic-bezier(1,.03,.58,.95);
+        }
+
+        &:hover:after {
+            transform: translateY(-5px);
+        }
+    }
 
 }
 
@@ -226,7 +269,20 @@ nav {
     }
 }
 /* ======================
-Content Styles
+05: Interior Styles
+====================== */
+
+/* About Page */
+
+.about {
+    .profile-content {
+        padding: 3em 0;
+    }
+}
+
+
+/* ======================
+06: Content Styles
 ====================== */
 
 .content {
@@ -246,12 +302,12 @@ Content Styles
 }
 
 /* ======================
-01: Footer Styles
+07: Footer Styles
 ====================== */
 
 .footer {
     position: relative;
-    background-color: #2B675E;
+    background-color: $dark-green;
     padding: 3em 0 .5em;
     &:before {
         pointer-events: none;
