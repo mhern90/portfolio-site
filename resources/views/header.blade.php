@@ -19,7 +19,7 @@
             </ul>
             <img src="images/logo.png" alt="">
             <ul class="nav-left">
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/mywork">My Work</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>

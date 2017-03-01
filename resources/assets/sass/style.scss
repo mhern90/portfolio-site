@@ -122,6 +122,12 @@ header {
         height: 60vh;
         background-image: none;
         background-color: $minty-aqua;
+        &.dark {
+            background-color: $dark-green;
+            .text-wrap {
+                color: #fff;
+            }
+        }
         .text-wrap {
             padding: 0;
             position: absolute;
@@ -307,6 +313,52 @@ nav {
     }
 }
 
+.content.portfolio {
+    .portfolio-wrap {
+        padding: 3em 0;
+        &#professional, &#components {
+            background-color: $minty-aqua
+        }
+        &:last-child {
+            padding-bottom: 100px;
+        }
+        .img-wrap {
+            position: relative;
+            margin: 20px 0;
+            height: 360px;
+            width: 360px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0;
+            }
+            .overlay {
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $purple-transparent;
+                transform: translateY(100%);
+                transition: 0.25s all;
+                text-align: center;
+                p {
+                    color: #fff;
+                    position: absolute;
+                    margin: auto;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+            &:hover .overlay {
+                transform: translateY(0);
+            }
+        }
+    }
+}
 
 /* ======================
 06: Content Styles
@@ -363,6 +415,34 @@ nav {
     }
     li, p {
         padding: .3em 0;
+    }
+    li {
+        position: relative;
+        padding: .3em 0;
+        &:before, &:after {
+            position: absolute;
+            top: 0;
+            line-height: 1.3;
+            opacity: 0;
+            transition: all 0.25s;
+        }
+        &:before {
+            content: '[';
+        }
+        &:after {
+            content: ']';
+        }
+        &:hover {
+            &:before, &:after {
+                opacity: 1;
+            }
+            &:before {
+                transform: translateX(-13px);
+            }
+            &:after {
+                transform: translateX(10px);
+            }
+        }
     }
     .copywrite {
         text-align: center;

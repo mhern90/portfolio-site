@@ -11,9 +11,13 @@ $pageTitle = "About";
     <div class="profile-content">
         <div class="container">
             <h2>From Writer to Programmer</h2>
-            <p>Blah blah blah filler content. I will write an award-winning bio about myself later. Etc. Pidgeons. Blah blah blah filler content. I will write an award-winning bio about myself later. Etc. Pidgeons. Blah blah blah filler content. I will write an award-winning bio about myself later. Etc. Pidgeons. Blah blah blah filler content. I will write an award-winning bio about myself later. Etc. Pidgeons. Blah blah blah filler content. I will write an award-winning bio about myself later. Etc. Pidgeons.</p>
-            <p>I will write an award-winning bio about myself later. Etc. Pidgeons. Blah blah blah filler content.</p>
-            <a href="#" class="btn"><i class="fa fa-arrow-down" aria-hidden="true"></i></i> Download My Resume</a>
+            <p>Since I was young, I've always been drawn to creative actvities - writing, art, cooking. During college, I majored in English, believing that I was going to have a lucrative career as a copywriter.</p>
+            <p>I landed my first writing gig at a Web Development company, which required me to put content into Wordpress. So I taught myself html and css. I had never really touched any kind of code before. Teachers I had in highschool had always made it out to be ideal for kids who were super into math.</p>
+            <p>I became curious. I wanted to do more. So I kept teaching myself: Codecademy, Lynda.com courses. If I didn't know something, I asked one of the other programmers to teach me.</p>
+            <p>Over time, I did more coding and less writing, so much so that my entire job function changed (as well as my title).</p>
+            <p>While I still enjoy (creative) writing, I'm greatful that I discovered my love for coding. And with that same fever and passion I have for writing, I now apply to programming.</p>
+            <p>I hope to find a home at a company where I can expand my skillset and eventually build something meaningful that I'm truly proud of.</p>
+            <a href="#" target="_blank" class="btn"><i class="fa fa-arrow-down" aria-hidden="true"></i></i> Download My Resume</a>
         </div>
     </div>
     <div class="my-skills">
@@ -43,10 +47,13 @@ $pageTitle = "About";
                 </div>
             </div>
             <div class="row row-pad swoosh row-3" data-name="fadeUp" data-fill-mode="forwards" data-delay="2s">
-                <div class="col xs-12 col-sm-4 col-sm-push-2">
+                <div class="col xs-12 col-sm-4">
                     <img src="images/logos/jQuery.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4 col-sm-push-2">
+                <div class="col xs-12 col-sm-4">
+                    <img src="images/logos/php.png" alt="">
+                </div>
+                <div class="col xs-12 col-sm-4">
                     <img src="images/logos/sourcetree.png" alt="">
                 </div>
             </div>
@@ -55,10 +62,10 @@ $pageTitle = "About";
     <div class="what-im-learning">
         <div class="container">        
             <h2>What I'm Learning</h2>
-            <p>I'm always trying to get more experience under my belt. Currently, I'm taking classes / experimenting with the following:</p>
+            <p>I'm always trying to get more experience under my belt. In addition to going back to school to pursue a Web Programming Certificat,I'm taking online courses / experimenting with the following:</p>
             <div class="row">
                 <div class="col xs-12 col-sm-4">
-                    <img src="images/logos/php.png" alt="">
+                    <img src="images/logos/laravel.png" alt="">
                 </div>
                 <div class="col xs-12 col-sm-4">
                     <img src="images/logos/mysql.png" alt="">

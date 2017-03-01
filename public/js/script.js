@@ -38,24 +38,48 @@ function animate() {
     });
 }
 
+function picContainerCalc() {
+    var $imgWrap = $(".img-wrap"),
+    $container = $imgWrap.parent().first().width();
+
+    $imgWrap.css({
+        'width' : $container + 'px',
+        'height' : $container + 'px'
+    })
+}
 
 $(document).ready(function(){
     // console.log('jquery is working');
+
     var $nav = $('nav');
 
     $(window).on('scroll', function(){ 
         calcScrollTop($nav);
     });
 
-
     // trigger animation on scroll
     $(window).on('scroll', function() {
-        var swooshHeight = $(document).find(".swoosh").first()
-                                      .offset().top - $('header').height();
+
+        if ($(document).find(".swoosh").length == 0) {
+            return; // prevents execution if class doesn't exist
+        } else { 
+            var swooshHeight = $(document).find(".swoosh").first()
+                                          .offset().top - $('header').height() || null;
+        }
         var swooshDistance = $(window).scrollTop();
 
         if (swooshDistance > swooshHeight) {
             animate();
         }
     });
+    
+    if($(document).find(".img-wrap").length == 0) {
+        return; // prevents execution if class doesn't exist
+    } else {
+        $(window).on("resize", function () {
+            picContainerCalc();
+        }).resize();
+    }
+
+
 });
