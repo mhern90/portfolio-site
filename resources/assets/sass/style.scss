@@ -90,7 +90,9 @@ body {
     display: inline-block;
     vertical-align: bottom;
 }
-
+.row-pad {
+    padding: 1.5em 0;
+}
 /* ======================
 02: Header
 ====================== */
@@ -182,7 +184,7 @@ nav {
         color: #fff;
         padding-bottom: 5px;
     }
-    a:hover {
+    a:hover, a:visited {
         color: #fff;
     }
     li {
@@ -274,9 +276,34 @@ nav {
 
 /* About Page */
 
-.about {
+.content.about {
     .profile-content {
+        background-color: $dark-green;
         padding: 3em 0;
+        h2, p {
+            color: #fff;
+        }
+        a.btn {
+            @include btn-fill(#fff, $dark-green)
+            &:hover i.fa-arrow-down {
+                animation: fadeDown .8s forwards;
+            }
+        }
+    }
+    .my-skills {
+        text-align: center;
+        background-color: $foxy-orange;
+        padding: 3em 0;
+        h2, p {
+            color: $light-gray;
+        }
+        .row {
+            opacity: 0;
+        }
+    }
+    .what-im-learning {
+        text-align: center;
+        padding: 3em 0 100px;
     }
 }
 
