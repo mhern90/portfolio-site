@@ -1,0 +1,369 @@
+/* ==================== 
+COMPONENET STYLES 
+==================== */
+
+/* BUTTONS ========= */
+
+.button-001 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased; 
+  display:inline-block;
+  position: relative;
+  line-height: 35px;
+  color: #bebebe;
+  background-color: transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align:center;
+  border: 2px solid #bebebe;
+  padding: 5px 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  opacity: .999;
+}
+
+ .button-001:hover {
+  color: #843284;
+  text-decoration: none;
+}
+
+.button-001:before,
+.button-001:after {
+  content: '';
+  transition: all 0.4s ease;
+  border-style: solid;
+  position: absolute;
+  z-index: 5;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+
+.button-001:before {
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-width: 2px 0 2px 0;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.button-001:after {
+  top: 0;
+  left: -1px;
+  width:100%;
+  height: 0;
+  border-width: 0 2px 0 2px;
+}
+
+/* button animation */
+
+.button-001:hover:before {
+  width:100%;
+}
+
+.button-001:hover:after {
+  height: 100%;
+}
+
+.button-001.button-color:before,
+.button-001.button-color:after {
+  border-color: #843284;
+}
+
+.button-001.button-color:before:hover {
+  border-color: #843284;
+} 
+
+
+
+
+/* button 002 */
+
+a.button-002 {
+  position: relative;
+  backface-visibility: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  margin: 0 auto;
+  padding: 10px 15px;
+  letter-spacing: 0;
+  font-weight: 500;
+  transition: letter-spacing 0.3s ease-in-out;
+}
+
+a.button-002:before, a.button-002:after  {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 0;
+  margin: auto;
+  height: 3px;
+  background-color: #333;
+  z-index: 7;
+  transition: width 0.3s ease-in-out;
+}
+
+a.button-002:before {
+  top: 0;
+}
+
+a.button-002:after {
+  bottom: 0;
+}
+
+a.button-002:after {
+  
+}
+
+/* button animation */
+
+a.button-002:hover, a.button-002:active {
+  letter-spacing: 5px;
+}
+
+a.button-002:hover:before,
+a.button-002:hover:after {
+  width: 100%;
+}
+
+/* SERVICE BOXES ========= */
+
+.service-boxes {
+  margin: 30px 0;
+}
+.service-boxes .no-pad {
+    padding: 0;
+}
+
+.service-boxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.service-boxes .service-box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    min-height: 288px;
+    overflow: hidden;
+}
+
+.service-boxes .service-box img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.service-boxes .service-box.last-box {
+    background: #52fdd1;
+}
+.service-boxes .service-box.last-box h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #02b586;
+    transform: translateY(200%);
+    opacity: 0;
+}
+
+.service-boxes .service-box.last-box:hover h3 {
+    animation: fadeUpwards 0.25s forwards;
+}
+
+@keyframes fadeUpwards {
+    from: {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.service-boxes .service-box.last-box .fa-long-arrow-right {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    text-align: center;
+    color: #02b586;
+    transition: transform 0.25s;
+}
+
+.service-boxes .service-box.last-box:hover .fa-long-arrow-right {
+    transform: translateX( 25px) translateY(-50%);
+}
+
+
+.service-boxes h2,
+.service-boxes p {
+    margin-bottom: 0;
+}
+
+.service-boxes h2 {
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.service-boxes p {
+    border-left: 3px solid #52FDD1;
+    font-weight: 300;
+    padding-left: 10px;
+    color: #52FDD1;
+}
+
+
+/* Service Box Bgs */
+
+.service-boxes #box-1 { background-image: url('../images/box1.jpg');  }
+.service-boxes #box-2 { background-image: url('../images/box2.jpg'); }
+.service-boxes #box-3 { background-image: url('../images/box3.jpg'); }
+.service-boxes #box-4 { background-image: url('../images/box4.jpg'); }
+.service-boxes #box-5 { background-image: url('../images/box5.jpg'); }
+.service-boxes #box-6 { background-image: url('../images/box6.jpg'); }
+
+/* Text Overlay */
+
+.service-boxes .text-overlay {
+    transform: scale(0);
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 22, 50, 0.9);
+    transition: transform 0.25s;
+    transform-origin: left bottom;
+}
+
+.service-boxes .service-box:hover .text-overlay {
+    transform: scale(1);
+    transform-origin: left bottom;
+}
+
+.service-boxes .text-box {
+    transform: translateY(-50%);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: left;
+}
+
+/* ACCORDIONS ========= */
+
+/* accordion 001*/
+
+.accordion-001 {
+  margin: 30px 0;
+}
+.accordion-001 li { position: relaive; transition: margin 0.4s, box-shadow 0.1s; }
+.accordion-001-header:after { opacity: 0; transition: opacity 0.1s; content:'\f065'; font-family: 'FontAwesome'; color: #000; font-size: 1rem; display: inline-block; line-height: 1.5rem; float:right; clear:both;}
+
+.accordion-001 li:hover { cursor: pointer; }
+.accordion-001 li:hover .accordion-001-header:after { opacity: 1; }
+
+.accordion-001 li:not(:last-of-type) { border-bottom: 1px solid #ccc; }
+.accordion-001 li.active:not(:last-of-type) { border-color: transparent; }
+
+.accordion-001 li.active {margin: 15px -15px; box-shadow: 0 2px 5px -2px #000;}
+.accordion-001 li.active .accordion-001-header:after { content: '\f066'; opacity: 1; }
+
+
+.accordion-001-header,
+.accordion-001-body { padding: 15px; background: #fff; font-family:'Hind', sans-serif;}
+
+.accordion-001-header h2 { color: #777; font-family: 'Hind', sans-serif; padding-left: 10px; display:inline-block; margin-bottom: 0 !important; }
+
+.accordion-001 li .accordion-001-body { display:none; line-height: 1.5; }
+
+/* accordion 002*/
+
+.accordion-002-header { position: relative; z-index:100; background: #B92D2D; transition: all 0.1s; cursor: pointer;}
+.accordion-002-header:hover { background: #ae2525; }
+
+
+.accordion-002-header h2 { position: relative; padding:20px 0; color: #fff; text-transform: uppercase; transition: all 0.25s;}
+.accordion-002-header:hover h2 i { color: #fff; }
+
+.accordion-002-header li:first-child h2:before {
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  height:5px;
+  width:100%;
+  border-radius: 5px;
+  background:#6C0000;
+}
+.accordion-002-header h2:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height:5px;
+  width:100%;
+  border-radius: 5px;
+  background:#6C0000;
+}
+.accordion-002-header h2 i {
+  color: #6C0000;
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+}
+
+
+.accordion-002 li.active i { transform: translateY(-50%) rotate(225deg); color:#fff; }
+.accordion-002 li.active h2:before,
+.accordion-002 li.active h2:after { display:none; }
+.accordion-002 li.active .accordion-002-header h3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: #b92d2d transparent transparent transparent;
+}
+
+.accordion-002 li.active .accordion-002-header:hover h3 { border-color: #ae2525 transparent transparent transparent; transition: border-color 0.1s;
+}
+
+.accordion-002-body { background: #fff; padding: 30px 0; }
+.accordion-002 li:not(.active) .accordion-002-body {display:none;}
+.accordion-002 li.active .accordion-002-body { animation: tunaFadeIn 0.6s forwards; }
+
+
+.accordion-002-body h3 { margin-bottom: 10px; }
+.accordion-002-body p { line-height: 1.5; }
+
+.accordion-002-sidebar { background: #F5F5F5; padding:15px; border: 4px solid #CCC; border-radius: 10px;}
+.accordion-002-sidebar ul li { position: relative; padding-left: 20px; line-height: 1.5; }
+.accordion-002-sidebar ul li:before { content:'\25CB';  font-size: 18px; position: absolute; line-height: 1.5; top: 0; left: 0; }
+
+/* CSS Animation */
+@keyframes tunaFadeIn {
+  from { opacity: 0; transform: translateY(-100%); transform: translate3d(0, -100%, 0); }
+  to { opacity: 1; transform: translateY(0%); transform: translate3d(0, 0%, 0); }
+}

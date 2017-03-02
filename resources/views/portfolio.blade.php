@@ -17,11 +17,11 @@ $pageTitle = "My Work";
         </div>
         <div id="professional" class="portfolio-wrap">
             <div class="container">
-                <h3>Professional Work</h3>
+                <h2>Professional Work</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="https://barefootinheels.com/" target="_blank">
                                 <img src="/images/professional/barefootinheels-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -31,7 +31,7 @@ $pageTitle = "My Work";
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="https://staging.bigtuna.com/southwest.deli.group/site/our-restaurant-locations/" target="_blank">
                                 <img src="/images/professional/southwestdelilocations-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -41,7 +41,7 @@ $pageTitle = "My Work";
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="http://www.lenroofing.com/blog/" target="_blank">
                                 <img src="/images/professional/lenroofingblog-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -51,7 +51,7 @@ $pageTitle = "My Work";
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="https://endeavortree.com/" target="_blank">
                                 <img src="/images/professional/endeavortree-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -61,7 +61,7 @@ $pageTitle = "My Work";
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="https://hmsmeetingservices.com/" target="_blank">
                                 <img src="/images/professional/hmsmeetingservices-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -71,7 +71,7 @@ $pageTitle = "My Work";
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
-                            <a href="#" target="_blank">
+                            <a href="https://staging.bigtuna.com/daves.and.kelly/site/radiology-equipment-inspections-louisville-ky/" target="_blank">
                                 <img src="/images/professional/daveskellytabbed-sm.png" alt="">
                             </a>
                             <div class="overlay">
@@ -84,15 +84,12 @@ $pageTitle = "My Work";
             </div>
         <div id="personal" class="portfolio-wrap">
             <div class="container">
-                <h3>Personal Projects</h3>
+                <h2>Personal Projects</h2>
                 <p><em>(Coming Soon)</em></p>
             </div>
         </div>
         <div id="components" class="portfolio-wrap">
-            <div class="container">
-                <h3>Web Components</h3>
-                
-            </div>
+            @include('components')
         </div>
     </div>
 </main>

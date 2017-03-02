@@ -7,6 +7,7 @@ Dev: Melinda Hernandez
 @import 'variables';
 @import 'animations';
 @import 'mixins';
+@import 'components';
 
 /* STYLE INDEX:==============
 * 01: General Styles
@@ -58,6 +59,9 @@ body {
     p {
         font-weight: 300;
     }
+    em {
+        font-style: italic;
+    }
     a.btn {
         font-weight: 300;
         font-size: 1.2em;
@@ -92,6 +96,9 @@ body {
 }
 .row-pad {
     padding: 1.5em 0;
+}
+.row-center {
+    text-align: center;
 }
 /* ======================
 02: Header
@@ -320,6 +327,16 @@ nav {
         padding: 3em 0;
         &#professional, &#components {
             background-color: $minty-aqua;
+        }
+        &#components {
+            padding-bottom: 150px;
+            hr {
+                border-top: 1px solid $dark-green;
+                margin: 2em 0;
+            }
+            a {
+                text-decoration: none;
+            }
         }
         .img-wrap {
             position: relative;
