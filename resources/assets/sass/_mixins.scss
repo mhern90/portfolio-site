@@ -18,7 +18,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color: $color;
         transform: translateY(100%);
         transition: transform 0.25s;
         transition-timing-function: cubic-bezier(1,.03,.58,.95);

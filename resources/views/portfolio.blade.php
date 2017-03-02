@@ -82,11 +82,10 @@ $pageTitle = "My Work";
                     </div>
                 </div>
             </div>
-        </div>
         <div id="personal" class="portfolio-wrap">
             <div class="container">
                 <h3>Personal Projects</h3>
-                
+                <p><em>(Coming Soon)</em></p>
             </div>
         </div>
         <div id="components" class="portfolio-wrap">

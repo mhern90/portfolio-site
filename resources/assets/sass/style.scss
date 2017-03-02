@@ -313,14 +313,13 @@ nav {
     }
 }
 
-.content.portfolio {
+/* portfolio page*/
+
+.portfolio {
     .portfolio-wrap {
         padding: 3em 0;
         &#professional, &#components {
-            background-color: $minty-aqua
-        }
-        &:last-child {
-            padding-bottom: 100px;
+            background-color: $minty-aqua;
         }
         .img-wrap {
             position: relative;
@@ -356,6 +355,18 @@ nav {
             &:hover .overlay {
                 transform: translateY(0);
             }
+        }
+    }
+}
+
+/* contact page */
+
+.contact {
+    .contact-area {
+        background-color: $cream;
+        padding: 3em 0 100px;
+        a.btn {
+            @include btn-fill($purple, $cream)
         }
     }
 }

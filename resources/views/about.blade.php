@@ -17,7 +17,7 @@ $pageTitle = "About";
             <p>Over time, I did more coding and less writing, so much so that my entire job function changed (as well as my title).</p>
             <p>While I still enjoy (creative) writing, I'm greatful that I discovered my love for coding. And with that same fever and passion I have for writing, I now apply to programming.</p>
             <p>I hope to find a home at a company where I can expand my skillset and eventually build something meaningful that I'm truly proud of.</p>
-            <a href="#" target="_blank" class="btn"><i class="fa fa-arrow-down" aria-hidden="true"></i></i> Download My Resume</a>
+            <a href="myFighter.pdf" target="_blank" class="btn"><i class="fa fa-arrow-down" aria-hidden="true"></i></i> Download My Resume</a>
         </div>
     </div>
     <div class="my-skills">
