@@ -1,7 +1,14 @@
 'use strict';
-    
 
-/* calcScrollTop calculates the distnce between*/
+/* 
+* Author: Melinda Hernandez
+* Version: 1.0
+* Date: 3/2/2017
+*/   
+
+/* Function List */
+
+// calcScrollTop calculates the distnce between
 function calcScrollTop(element) {
     var scrollTop     = $(window).scrollTop();
     var elementOffset = element.offset().top;
@@ -17,7 +24,8 @@ function calcScrollTop(element) {
     }
 };
 
-/* stick takes 1 parameter, element, and adds the sticky class to it. It also adds the class of shrink to any image inside of the element*/
+// stick takes 1 parameter, element, and adds the sticky class to it. 
+// It also adds the class of shrink to any image inside of the element
 function stick(element) {
     $(element).addClass('sticky');
     $(element).find('img')
@@ -38,6 +46,8 @@ function animate() {
     });
 }
 
+// measures the parent container of the image and sets the div wrap 
+// width to it's width and an equal height for responsive thumbnails 
 function picContainerCalc() {
     var $imgWrap = $(".img-wrap"),
     $container = $imgWrap.parent().first().width();
@@ -48,13 +58,23 @@ function picContainerCalc() {
     })
 }
 
+// applies the open class to the mobile menu button to expand menu
+function openMenu() {
+    $('.ham-button').toggleClass('open');
+    $('.nav-mobile').slideToggle();
+}
+
 $(document).ready(function(){
-    // console.log('jquery is working');
 
     var $nav = $('nav');
 
     $(window).on('scroll', function(){ 
         calcScrollTop($nav);
+    });
+
+     // open menu
+    $('.ham-button').on('click', function() {
+        openMenu();
     });
 
     // trigger animation on scroll
@@ -73,6 +93,7 @@ $(document).ready(function(){
         }
     });
     
+    // generate portfolio thumbnails on resize
     if($(document).find(".img-wrap").length == 0) {
         return; // prevents execution if class doesn't exist
     } else {
@@ -80,6 +101,5 @@ $(document).ready(function(){
             picContainerCalc();
         }).resize();
     }
-
 
 });

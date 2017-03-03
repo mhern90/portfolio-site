@@ -17,6 +17,7 @@ Dev: Melinda Hernandez
 * 05: Interior Styles
 * 06: Content Styles
 * 07: Footer Styles
+* 08: Mobile Styles
 ===========================*/
 
 
@@ -126,7 +127,7 @@ header {
     }
     &.interior {
         position: relative;
-        height: 60vh;
+        height: 450px;
         background-image: none;
         background-color: $minty-aqua;
         &.dark {
@@ -476,6 +477,79 @@ nav {
         text-align: center;
         & p {
             font-size: .7em;
+        }
+    }
+}
+
+/* ======================
+08: Mobile Styles
+====================== */
+
+/* mobile navigation */
+
+#navbar {
+    background-color: $purple;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 5000;
+    .ham-button {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        &:before, &:after {
+            transform-origin: left;
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            width: 35px;
+            height: 5px;
+            transition: transform 0.25s .15s ease-in;
+        }
+        &:before {
+            top: 7px;
+        }
+        &:after {
+            bottom: 7px;
+        }
+        #hamburger {
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            width: 35px;
+            height: 5px;
+            top: 50%;
+            // right: 15px;
+            transform: translateY(-50%);
+            transition: opacity 0.2s 0.15s;
+        }
+        &.open {
+            #hamburger {
+                opacity: 0;
+            }
+            &:before {
+                margin: -3px 0;
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    ul.nav-mobile {
+        display: none;
+        background-color: $purple;
+        margin-top: 50px;
+        li {
+            padding: 15px;
+        }
+        li a {
+            color: #fff;
+        }
+        .open {
+            display: block;
         }
     }
 }

@@ -4,7 +4,7 @@
 $(document).on('ready', function(){
 
     // accordion 001
-    $('ul').on('click', 'li', function() {
+    $('ul.accordion-001').on('click', 'li', function() {
        $(this).toggleClass('active');
        if( $(this).hasClass('active') ) {
         $(this).children('.accordion-001-body').slideDown('100');
