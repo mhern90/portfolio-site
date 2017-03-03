@@ -24,36 +24,67 @@ $pageTitle = "About";
         <div class="container">
             <h2>What I Can Do For You</h2>
             <p>Listed below are all the languages, softwares, version controls, etc that I am competent in. If you use any of these, I'll feel right at home working on a project for you!</p>
-            <div class="row row-pad swoosh row-1" data-name="fadeUp" data-fill-mode="forwards">
-                <div class="col xs-12 col-sm-4">
+            <!-- mobile -->
+            <div class="row hidden-sm hidden-md hidden-lg" >
+                <div class="col-xs-6">
                     <img src="images/logos/html5.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-6">
                     <img src="images/logos/css3.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-6">
+                    <img src="images/logos/js.png" alt="">
+                </div>
+                <div class="col-xs-6">
+                    <img src="images/logos/bootstrap.png" alt="">
+                </div>
+                <div class="col-xs-6" >
+                    <img src="images/logos/git.png" alt="">
+                </div>
+                <div class="col-xs-6">
+                    <img src="images/logos/wordpress.png" alt="">
+                </div>
+                <div class="col-xs-6">
+                    <img src="images/logos/jQuery.png" alt="">
+                </div>
+                <div class="col-xs-6">
+                    <img src="images/logos/php.png" alt="">
+                </div>
+                <div class="col-xs-6 col-xs-push-3">
+                    <img src="images/logos/sourcetree.png" alt="">
+                </div>
+            </div>
+            <!-- end mobile -->
+            <div class="row hidden-xs row-pad swoosh row-1" data-name="fadeUp" data-fill-mode="forwards">
+                <div class="col-xs-12 col-sm-4">
+                    <img src="images/logos/html5.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="images/logos/css3.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/js.png" alt="">
                 </div>
             </div>
-            <div class="row row-pad swoosh row-2" data-name="fadeUp" data-fill-mode="forwards" data-delay="1s">
-                <div class="col xs-12 col-sm-4">
+            <div class="row hidden-xs row-pad swoosh row-2" data-name="fadeUp" data-fill-mode="forwards" data-delay="1s">
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/bootstrap.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4" >
+                <div class="col-xs-12 col-sm-4" >
                     <img src="images/logos/git.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/wordpress.png" alt="">
                 </div>
             </div>
-            <div class="row row-pad swoosh row-3" data-name="fadeUp" data-fill-mode="forwards" data-delay="2s">
-                <div class="col xs-12 col-sm-4">
+            <div class="row hidden-xs row-pad swoosh row-3" data-name="fadeUp" data-fill-mode="forwards" data-delay="2s">
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/jQuery.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/php.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-4">
                     <img src="images/logos/sourcetree.png" alt="">
                 </div>
             </div>
@@ -64,13 +95,13 @@ $pageTitle = "About";
             <h2>What I'm Learning</h2>
             <p>I'm always trying to get more experience under my belt. In addition to going back to school to pursue a Web Programming Certificat,I'm taking online courses / experimenting with the following:</p>
             <div class="row">
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-6 col-sm-4">
                     <img src="images/logos/laravel.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-6 col-sm-4">
                     <img src="images/logos/mysql.png" alt="">
                 </div>
-                <div class="col xs-12 col-sm-4">
+                <div class="col-xs-6 col-xs-push-3 col-sm-4 col-sm-push-0">
                     <img src="images/logos/sass.png" alt="">
                 </div>
             </div>

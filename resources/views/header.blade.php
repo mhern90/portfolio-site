@@ -26,7 +26,7 @@
     </div>
 </nav>
 <!-- mobile navigation -->
-<div id="navbar" class="hidden-sm hidden-md hidden-lg">
+<nav id="navbar" class="hidden-sm hidden-md hidden-lg">
     <a href="#" class="ham-button">
         <span id="hamburger"></span>
     </a>
@@ -36,7 +36,7 @@
         <li><a href="/mywork">My Work</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>
-</div>
+</nav>
 
 @yield('content')
 @include('footer')

@@ -17,7 +17,6 @@ $pageTitle = "My Work";
         </div>
         <div id="professional" class="portfolio-wrap">
             <div class="container">
-                <h2>Professional Work</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
@@ -27,6 +26,9 @@ $pageTitle = "My Work";
                             <div class="overlay">
                                 <p><strong>Barefoot In Heels <br/> (Site) </strong></p>
                             </div>
+                        </div>
+                        <div class="hidden-md hidden-lg">
+                             <p><strong>Barefoot In Heels <br/> (Site) </strong></p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
@@ -38,6 +40,9 @@ $pageTitle = "My Work";
                                 <p><strong>Southwest Deli <br/> (Interior Pages)</strong></p>
                             </div>
                         </div>
+                        <div class="hidden-md hidden-lg">
+                            <p><strong>Southwest Deli <br/> (Interior Pages)</strong></p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
@@ -47,6 +52,9 @@ $pageTitle = "My Work";
                             <div class="overlay">
                                 <p><strong>Len Roofing <br/> (blog)</strong></p>
                             </div>
+                        </div>
+                        <div class="hidden-md hidden-lg">
+                            <p><strong>Len Roofing <br/> (blog)</strong></p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
@@ -58,6 +66,9 @@ $pageTitle = "My Work";
                                 <p><strong>Endeavor Tree <br/> (Interior Pages) </strong></p>
                             </div>
                         </div>
+                        <div class="hidden-md hidden-lg">
+                            <p><strong>Endeavor Tree <br/> (Interior Pages) </strong></p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="img-wrap">
@@ -67,6 +78,9 @@ $pageTitle = "My Work";
                             <div class="overlay">
                                 <p><strong>HMS Meeting <br/> (Interior Pages)</strong></p>
                             </div>
+                        </div>
+                        <div class="hidden-md hidden-lg">
+                            <p><strong>HMS Meeting <br/> (Interior Pages)</strong></p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
@@ -78,10 +92,13 @@ $pageTitle = "My Work";
                                 <p><strong>Daves &amp; Kelly <br/> (Interior Pages)</strong></p>
                             </div>
                         </div>
-                    </div>
+                        <div class="hidden-md hidden-lg">
+                            <p><strong>Daves &amp; Kelly <br/> (Interior Pages)</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         <div id="personal" class="portfolio-wrap">
             <div class="container">
                 <h2>Personal Projects</h2>

@@ -417,19 +417,6 @@ nav {
     position: relative;
     background-color: $dark-green;
     padding: 3em 0 .5em;
-    &:before {
-        pointer-events: none;
-        content: '';
-        background-image: url(../images/footer.png);
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 5px;
-        left: 0;
-        right: 0;
-        transform: translateY(-100%);
-    }
     & > * {
         color: #fff;
     }
@@ -487,69 +474,152 @@ nav {
 
 /* mobile navigation */
 
-#navbar {
-    background-color: $purple;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    z-index: 5000;
-    .ham-button {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        &:before, &:after {
-            transform-origin: left;
+@media only screen and (max-width: 768px) {
+    #navbar {
+        background-color: $purple;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 5000;
+        top: 0;
+        .ham-button {
+            width: 40px;
+            height: 40px;
             position: absolute;
-            content: "";
-            background-color: #fff;
-            width: 35px;
-            height: 5px;
-            transition: transform 0.25s .15s ease-in;
-        }
-        &:before {
-            top: 7px;
-        }
-        &:after {
-            bottom: 7px;
-        }
-        #hamburger {
-            position: absolute;
-            content: "";
-            background-color: #fff;
-            width: 35px;
-            height: 5px;
-            top: 50%;
-            // right: 15px;
-            transform: translateY(-50%);
-            transition: opacity 0.2s 0.15s;
-        }
-        &.open {
-            #hamburger {
-                opacity: 0;
+            right: 5px;
+            top: 5px;
+            &:before, &:after {
+                transform-origin: left;
+                right: 5px;
+                position: absolute;
+                content: "";
+                background-color: #fff;
+                width: 35px;
+                height: 5px;
+                transition: transform 0.25s .15s ease-in;
             }
             &:before {
-                margin: -3px 0;
-                transform: rotate(45deg);
+                top: 7px;
             }
             &:after {
-                transform: rotate(-45deg);
+                bottom: 7px;
+            }
+            #hamburger {
+                position: absolute;
+                right: 5px;
+                content: "";
+                background-color: #fff;
+                width: 35px;
+                height: 5px;
+                top: 50%;
+                // right: 15px;
+                transform: translateY(-50%);
+                transition: opacity 0.2s 0.15s;
+            }
+            &.open {
+                #hamburger {
+                    opacity: 0;
+                }
+                &:before {
+                    margin: -3px 0;
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                }
             }
         }
-    }
-    ul.nav-mobile {
-        display: none;
-        background-color: $purple;
-        margin-top: 50px;
-        li {
-            padding: 15px;
-        }
-        li a {
-            color: #fff;
-        }
-        .open {
-            display: block;
+        ul.nav-mobile {
+            display: none;
+            background-color: $purple;
+            margin-top: 50px;
+            li {
+                padding: 15px;
+                &:after {
+                    width: 100px;
+                }
+            }
+            li a {
+                color: #fff;
+            }
+            .open {
+                display: block;
+            }
         }
     }
 }
+
+/* mobile header */
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 2em 0;
+        .text-wrap {
+            padding: 80px;
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+        &.interior {
+            height: auto;
+            padding: 6em 0 3em;
+            position: relative;
+            .text-wrap { 
+                position: relative;           
+                top: 0;
+            }
+        }
+    }
+}
+
+/* home hire me banner */
+
+@media only screen and (max-width: 768px) {
+    .hire-me {
+        padding: 2em 0;
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    ul.footer-nav {
+        margin-bottom: 2em;
+    }
+}
+
+/* About me */
+
+@media only screen and (max-width: 768px) {
+    .content.about {
+        .my-skills { 
+            .row {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* Portfolio */
+
+@media only screen and (max-width: 991px) {
+    .portfolio {
+        .portfolio-wrap {
+            .img-wrap {
+                .overlay {
+                    display: none;
+                }
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* misc */
+@media only screen and (max-width: 768px) {
+    a.button-001.button-color {
+        margin-bottom: 30px;
+    }
+}
+

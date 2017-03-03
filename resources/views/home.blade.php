@@ -6,6 +6,9 @@ $pageTitle = "Home";
 <header>
     <div class="text-wrap">
         <h1>Melinda Hernandez</h1>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <img src="images/logo.png" width="60%" alt="">
+        </div>
         <h3>Front-end Web Developer</h3>
     </div>
 </header>   
@@ -26,7 +29,7 @@ $pageTitle = "Home";
         </div>
     </div>
 </main>
-<div class="homeboxes">
+<div class="homeboxes hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
