@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Melinda Hernandez | @php echo $pageTitle @endphp</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Oxygen:300,400,700" rel="stylesheet">
